@@ -61,9 +61,6 @@
                 $_POST["question5"],
                 $_POST["question6"],
                 $_POST["question7"],
-                $_POST["question8"],
-                $_POST["question9"],
-                $_POST["question10"],
             );
             $response_string =
                 "\n" .
@@ -74,10 +71,7 @@
                 $response[3] . "," .
                 $response[4] . "," .
                 $response[5] . "," .
-                $response[6] . "," .
-                $response[7] . "," .
-                $response[8] . "," .
-                $response[9];
+                $response[6];
 
             $myfile = fopen("responses.csv", "a");
             fwrite($myfile, $response_string);
